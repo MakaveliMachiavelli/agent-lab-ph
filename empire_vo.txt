@@ -1,0 +1,17 @@
+Ito ang ₱0 Empire. Walang binayaran.
+
+Una: Oracle Cloud free tier. Apat na ARM server, dalawang micro — 24 gig RAM, 10 terabytes egress buwan-buwan. Forever. Libre.
+
+Pangalawa: Cloudflare Tunnel. Walang port-forward, walang domain, walang credit card sa hosting. Isang command — may public URL ka na. Tumatalo pa sa CGNAT ng ISP mo.
+
+Pangatlo: n8n, self-hosted. Libre ang Zapier alternative. AI agency engine tumatakbo sa free box mo.
+
+Pang-apat: edge-tts. Si Blessica, Tagalog-English voice — walang API cost.
+
+Pang-lima: Groq Whisper. Captions, libre.
+
+Pang-anim: GitHub Pages. Landing page ng course, libre.
+
+Isa lang ang kailangan: isang libreng Oracle server, isang Cloudflare Tunnel. Buong business mo — ₱0.
+
+Hindi kami nag-iimbento. Buhay 'to. Nasa screen mo ngayon.

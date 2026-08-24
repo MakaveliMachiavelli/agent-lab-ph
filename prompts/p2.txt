@@ -1,0 +1,22 @@
+Agent Lab PH is a Taglish (Tagalog + English, natural Pinoy-dev tone) educational YouTube channel for Filipino freelancers and small business owners about FREE-TIER cloud computing and automation. Write the COMPLETE Pillar 2 content package. Match this established format exactly:
+
+EXAMPLE STYLE (Pillar 1 was: 10-min long-form Taglish script about getting free Oracle Cloud after 3 rejections — region trick Osaka/Mumbai/Frankfurt not Ashburn, retry Availability Domain on out-of-capacity, real bank card, always-free micro specs, login monthly to avoid reclaim — plus 5 short-form hooks + a Taglish caption).
+
+PILLAR 2 TOPIC: "Hardened Server — Fail-First Security."
+The fail-first drama: a freshly-created free Oracle server gets brute-forced within HOURS. Show a fake auth.log with hundreds of SSH login attempts from random global IPs (China, Russia, Brazil). Then the fix, taught as you do it:
+1. Disable password auth, SSH keys only (sshd_config: PasswordAuthentication no, PubkeyAuthentication yes)
+2. UFW firewall — allow only 22/80/443 (ufw allow 22, ufw enable)
+3. fail2ban — auto-ban repeat offenders (jail.local, [sshd] enabled = true)
+4. Cloudflare Tunnel instead of opening ports at all (no exposed 22)
+The payoff: a free server that survives the open internet.
+
+OUTPUT FORMAT (markdown, Taglish, first-person "ako", teach-as-you-do, stage directions in [BRACKETS]):
+## Pillar 2: [Title]
+### Long-form script (10 min, Taglish, conversational)
+[full script with [SHOW: ...] stage directions]
+### 5 Short-form hooks
+(each: Hook title + 30-sec Taglish script + caption line)
+### Caption
+(YouTube description teaser in Taglish, 2-3 sentences + 3 hashtags)
+
+Be SPECIFIC with real commands. Keep Taglish natural like a Pinoy dev talking to a friend. OUTPUT ONLY THE MARKDOWN, no preamble.

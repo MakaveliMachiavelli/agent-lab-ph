@@ -1,0 +1,7 @@
+LOOPHOLE #1: Oracle free tier = 4 ARM AMpere + 2 micro = 24GB RAM, 10TB egress, FOREVER.
+LOOPHOLE #2: Cloudflare Tunnel = free public URL, no port-forward, beats CGNAT, no domain needed.
+LOOPHOLE #3: n8n self-hosted = free Zapier替代, AI agency engine, runs ON the free box.
+LOOPHOLE #4: edge-tts = free BlessicaNeural Taglish voice, no API cost.
+LOOPHOLE #5: Groq Whisper = free captions.
+LOOPHOLE #6: GitHub Pages = free hosting for the course/landing.
+COMBINED: isang free Oracle server + isang Cloudflare Tunnel = buong business sa ₱0.

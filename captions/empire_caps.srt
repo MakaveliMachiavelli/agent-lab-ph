@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:03,500
+Ito ang ₱0 Empire. Walang binayaran.
+
+2
+00:00:03,500 --> 00:00:08,000
+Una: Oracle Cloud Free Tier. Apat na ARM server, dalawang micro — 24 gig RAM, 10TB egress buwan-buwan. Forever. Libre.
+
+3
+00:00:08,000 --> 00:00:13,000
+Pangalawa: Cloudflare Tunnel. Walang port-forward, walang domain, walang credit card sa hosting. Isang command, may public URL ka na.
+
+4
+00:00:13,000 --> 00:00:17,000
+Tumatalo pa sa CGNAT ng ISP mo.
+
+5
+00:00:17,000 --> 00:00:22,000
+Pangatlo: n8n — self-hosted, libre ang Zapier alternative. Agency engine tumatakbo sa free box mo.
+
+6
+00:00:22,000 --> 00:00:27,000
+Pang-apat: Edge TTS — BlessicaNeural, Tagalog-English voice, walang DV cost.
+
+7
+00:00:27,000 --> 00:00:31,000
+Pang-lima: Groq Whisper captions, libre.
+
+8
+00:00:31,000 --> 00:00:35,000
+Pang-anim: GitHub Pages landing page ng course, libre.
+
+9
+00:00:35,000 --> 00:00:40,000
+Isa lang ang kailangan: isang libreng Oracle server, isang Cloudflare tunnel.
+
+10
+00:00:40,000 --> 00:00:44,000
+Buong business mo — zero. Hindi kami nag-invento. Buhay 'to, nasa screen mo ngayon.

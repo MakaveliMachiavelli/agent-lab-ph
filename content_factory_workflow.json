@@ -1,0 +1,74 @@
+{
+  "name": "Agent Lab PH — Content Factory",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "content-factory",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "id": "webhook1",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [250, 300],
+      "webhookId": "content-factory"
+    },
+    {
+      "parameters": {
+        "jsCode": "const body = $json.body || $json;\nconst text = body.script_text || '';\nconst name = (body.filename || 'clip').replace(/[^a-zA-Z0-9_-]/g, '_');\nconst fs = require('fs');\nfs.mkdirSync('/home/allenos/agent-lab-ph/vo', { recursive: true });\nfs.writeFileSync(`/home/allenos/agent-lab-ph/vo/${name}.txt`, text);\nreturn [{ json: { filename: name, txt: `/home/allenos/agent-lab-ph/vo/${name}.txt` } }];"
+      },
+      "id": "write1",
+      "name": "Write Script",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [480, 300]
+    },
+    {
+      "parameters": {
+        "command": "cd /home/allenos/agent-lab-ph && /home/allenos/project-titan/.venv-whisper/bin/edge-tts --voice fil-PH-BlessicaNeural --file \"{{ $json.txt }}\" --write-media \"vo/{{ $json.filename }}.mp3\""
+      },
+      "id": "tts1",
+      "name": "Edge TTS (Taglish VO)",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [710, 300]
+    },
+    {
+      "parameters": {
+        "command": "cd /home/allenos/agent-lab-ph && /home/allenos/.agent-reach-venv/bin/agent-reach transcribe \"vo/{{ $json.filename }}.mp3\" > \"captions/{{ $json.filename }}.srt\" 2>/dev/null; echo done"
+      },
+      "id": "cap1",
+      "name": "Transcribe (Groq Whisper)",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [940, 300]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            { "name": "mp3", "value": "vo/{{ $json.filename }}.mp3" },
+            { "name": "srt", "value": "captions/{{ $json.filename }}.srt" },
+            { "name": "status", "value": "ok" }
+          ]
+        }
+      },
+      "id": "set1",
+      "name": "Result",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3,
+      "position": [1170, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": { "main": [[{ "node": "Write Script", "type": "main", "index": 0 }]] },
+    "Write Script": { "main": [[{ "node": "Edge TTS (Taglish VO)", "type": "main", "index": 0 }]] },
+    "Edge TTS (Taglish VO)": { "main": [[{ "node": "Transcribe (Groq Whisper)", "type": "main", "index": 0 }]] },
+    "Transcribe (Groq Whisper)": { "main": [[{ "node": "Result", "type": "main", "index": 0 }]] }
+  },
+  "meta": { "instanceId": "agent-lab-ph" },
+  "pinData": {},
+  "versionId": "1"
+}

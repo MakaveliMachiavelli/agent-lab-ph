@@ -1,0 +1,20 @@
+Working directory: /home/allenos/agent-lab-ph
+
+Build TWO things that turn this free Oracle box into a self-running content factory. Write both files there.
+
+1. `content_factory_workflow.json` — a valid n8n workflow EXPORT (the standard n8n JSON schema with "nodes", "connections", "meta", and a name). It should:
+   - Start with a Webhook node (path: content-factory, method POST)
+   - On receiving JSON {script_text, filename}, use an "Execute Command" (or "Code") node to write script_text to vo/<filename>.txt
+   - Then an "Execute Command" node runs: edge-tts --voice fil-PH-BlessicaNeural --file vo/<filename>.txt --write-media vo/<filename>.mp3
+   - Then a final node returns JSON {mp3: "vo/<filename>.mp3", status: "ok"}
+   Use real n8n node types (n8n-nodes-base.webhook, n8n-nodes-base.executeCommand, n8n-nodes-base.set). Make connections valid.
+
+2. `watch_daemon.py` — a Python daemon that:
+   - Watches /home/allenos/agent-lab-ph/scripts_in/ for new .txt files (polling every 10s)
+   - For each: runs edge-tts (fil-PH-BlessicaNeural) to produce vo/<name>.mp3
+   - Transcribes via the local free path: shell out to `/home/allenos/.agent-reach-venv/bin/agent-reach transcribe vo/<name>.mp3` and saves the .srt to captions/
+   - Burns captions into a vertical 9:16 mp4 via ffmpeg (scale to 1080x1920 with padding, subtitles filter) into shorts/
+   - Moves the processed .txt to scripts_done/
+   Include a `requirements.txt` (watchdog, edge-tts) and clear comments. Make it runnable.
+
+Output only a one-line summary when done.

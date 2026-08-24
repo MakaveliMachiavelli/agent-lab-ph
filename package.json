@@ -1,0 +1,23 @@
+{
+  "name": "agent-lab-ph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MakaveliMachiavelli/agent-lab-ph.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MakaveliMachiavelli/agent-lab-ph/issues"
+  },
+  "homepage": "https://github.com/MakaveliMachiavelli/agent-lab-ph#readme",
+  "dependencies": {
+    "n8n": "^2.35.7"
+  }
+}

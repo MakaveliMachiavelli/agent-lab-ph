@@ -1,0 +1,18 @@
+Agent Lab PH is a Taglish (Tagalog + English, natural Pinoy-dev tone) educational YouTube channel for Filipino freelancers and small business owners about FREE-TIER cloud computing and automation. Write COMPLETE content packages for Pillars 3, 4, and 5, in the established format:
+
+FORMAT per pillar (markdown, Taglish, first-person "ako", teach-as-you-do, stage directions in [BRACKETS]):
+## Pillar N: [Title]
+### Long-form script (10 min, Taglish, conversational)
+[full script with [SHOW: ...] directions]
+### 5 Short-form hooks
+(each: Hook title + 30-sec Taglish script + caption line)
+### Caption
+(YouTube description teaser in Taglish + 3 hashtags)
+
+PILLAR 3: "The Free-Tier Loophole Roundup" — chain every free tier into ONE ₱0 stack: Oracle (compute, 4 ARM + 2 micro, 24GB RAM, 10TB egress, forever) + Cloudflare (Tunnel free ingress, no port-forward, beats CGNAT; R2 free storage 10GB; DNS) + n8n (self-hosted automation, free) + GitHub (Pages + Actions, free) + Telegram (Bot API, free frontend) + edge-tts + Groq Whisper (free Taglish voice + transcription). Show how they compose into a ₱0 business.
+
+PILLAR 4: "Build an AI Agency for ₱0 with n8n" — the PRODUCT. Show an n8n workflow that auto-replies to leads via Telegram, transcribes audio, posts content, and runs on the free Oracle box. The B2B2B angle: sell this done-for-you to PH sari-sari stores, freelancers, small offices who can't afford devs.
+
+PILLAR 5: "Ship in Public / The Funnel" — the channel IS the product. Free tutorials → GitHub stars → consulting/agency. Metrics that matter. How to start with zero audience.
+
+Be SPECIFIC with real commands/tools. Natural Taglish. OUTPUT ONLY THE MARKDOWN, no preamble.
