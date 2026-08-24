@@ -1,0 +1,43 @@
+1
+00:00:00,000 --> 00:00:03,000
+Tatlo beses akong tinanggihan ng Oracle Cloud. Pero eto, may free server na ako ngayon. Paano?
+
+2
+00:00:03,000 --> 00:00:06,000
+Una, card declined. Gash virtual card. Declined.
+
+3
+00:00:06,000 --> 00:00:09,000
+Pangalawa, out of capacity paulit-ulit.
+
+4
+00:00:09,000 --> 00:00:12,000
+Pangatlo, mali ang region, permanent na pala.
+
+5
+00:00:12,000 --> 00:00:15,000
+Solution, real bank card. Low load region. Osaka, Mumbai, Frankfurt, Hindi Ashburn.
+
+6
+00:00:15,000 --> 00:00:18,000
+Retri Availability Domain kapag out of capacity. Success.
+
+7
+00:00:18,000 --> 00:00:21,000
+Dalawa okpo, labindalawagi di erhen, hindi dalawamputapat.
+
+8
+00:00:21,000 --> 00:00:24,000
+Stale dalawang libo at dalawamputatlo tutorial.
+
+9
+00:00:24,000 --> 00:00:27,000
+Half na ngayon. Free forever. Hindi Idol.
+
+10
+00:00:27,000 --> 00:00:30,000
+P2 Days. Katumbas equals closed. Login monthly. Keep a live cron.
+
+11
+00:00:30,000 --> 00:00:33,000
+Later ituturo. Setup Service. Limagi Pesos. BioLink.

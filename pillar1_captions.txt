@@ -1,0 +1,13 @@
+3 beses akong tinanggihan ng Oracle Cloud.
+Pero eto — may free server na ako ngayon. Paano?
+Una: card declined. GCash virtual card? Declined.
+Pangalawa: "Out of capacity" — paulit-ulit.
+Pangatlo: Mali ang region — permanent na pala.
+Solution: Real bank card. Low-load region.
+Osaka, Mumbai, Frankfurt — hindi ashburn.
+Retry availability domain kapag "out of capacity".
+Success. 2 OCPU, 12GB RAM — hindi 24GB!
+Stale 2023 tutorial? Half na ngayon.
+Free forever? Hindi. Idle 7 days = closed.
+Login monthly. Keepalive cron later ituturo.
+Setup service 5k pesos — bio link.
