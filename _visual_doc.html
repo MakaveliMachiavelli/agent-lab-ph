@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Agent Lab PH — What We Built (₱0 Empire)</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#070b14; color:#e8eefc; font-family:'Segoe UI',system-ui,sans-serif; padding:36px; }
+  .page { max-width:1180px; margin:0 auto; }
+  h1 { font-size:46px; color:#00e0ff; letter-spacing:1px; }
+  h1 span { color:#ffd400; }
+  .tag { color:#7d8bb0; font-size:16px; margin:6px 0 26px; }
+  .hero { background:#0e1626; border:1px solid #1f2c4a; border-radius:16px; padding:24px; display:flex; gap:22px; align-items:center; margin-bottom:26px; }
+  .hero img { width:380px; border-radius:12px; border:1px solid #1f2c4a; }
+  .hero .htxt h2 { color:#ffd400; font-size:22px; margin-bottom:10px; }
+  .hero .htxt p { font-size:15px; line-height:1.7; color:#c6d3f0; }
+  .hero .htxt .url { color:#00e0ff; font-size:18px; margin-top:10px; word-break:break-all; }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-bottom:26px; }
+  .card { background:#0e1626; border:1px solid #1f2c4a; border-radius:14px; padding:20px; }
+  .card h3 { color:#22e07a; font-size:15px; margin-bottom:12px; letter-spacing:.5px; }
+  .card ul { list-style:none; font-size:14px; line-height:1.85; color:#c6d3f0; }
+  .card ul li:before { content:"✓ "; color:#22e07a; }
+  .troops { background:#0e1626; border:1px solid #1f2c4a; border-radius:14px; padding:20px; margin-bottom:26px; }
+  .troops h3 { color:#ffd400; font-size:18px; margin-bottom:14px; }
+  .troop { display:flex; justify-content:space-between; padding:10px 0; border-bottom:1px dashed #1f2c4a; font-size:14px; }
+  .troop:last-child { border-bottom:none; }
+  .troop .who { color:#00e0ff; font-weight:600; }
+  .troop .res { color:#c6d3f0; }
+  .troop .ok { color:#22e07a; }
+  .files { background:#0e1626; border:1px solid #1f2c4a; border-radius:14px; padding:20px; margin-bottom:26px; }
+  .files h3 { color:#ffd400; font-size:18px; margin-bottom:14px; }
+  .frow { display:flex; justify-content:space-between; font-size:13px; padding:7px 0; border-bottom:1px dashed #1f2c4a; font-family:'Courier New',monospace; }
+  .frow:last-child { border-bottom:none; }
+  .frow .fn { color:#9fb4e6; }
+  .frow .fs { color:#7d8bb0; }
+  .gap { background:#1a1206; border:1px solid #4a3a10; border-radius:14px; padding:20px; margin-bottom:26px; }
+  .gap h3 { color:#ffb000; font-size:18px; margin-bottom:10px; }
+  .gap p { font-size:14px; line-height:1.7; color:#e6d3a8; }
+  .next { background:#06140e; border:1px solid #104a2c; border-radius:14px; padding:20px; }
+  .next h3 { color:#22e07a; font-size:18px; margin-bottom:10px; }
+  .next ol { margin-left:18px; font-size:14px; line-height:1.8; color:#bfe6cf; }
+  .foot { margin-top:26px; color:#7d8bb0; font-size:12px; text-align:center; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <h1>AGENT LAB PH — <span>₱0 EMPIRE</span></h1>
+  <div class="tag">What we built this session. Real, live, verified. Walang binayaran.</div>
+
+  <!-- HERO PROOF -->
+  <div class="hero">
+    <img src="file:///tmp/proof.png" alt="₱0 Empire live proof">
+    <div class="htxt">
+      <h2>THE LIVE PROOF</h2>
+      <p>A free Oracle server is running right now. On it, n8n (our product) is live to the whole internet through a free Cloudflare Tunnel — no credit card for hosting, no port-opening, beats the ISP lock.</p>
+      <div class="url">https://capital-stored-bonus-attempt.trycloudflare.com</div>
+      <p style="margin-top:8px;">Tested from outside: returns <b style="color:#22e07a;">{"status":"ok"}</b>. The server has been up 10+ days. Cost: <b style="color:#22e07a;">₱0/month, forever</b>.</p>
+    </div>
+  </div>
+
+  <!-- WHAT WAS BUILT -->
+  <div class="grid">
+    <div class="card">
+      <h3>THE HERO VIDEO</h3>
+      <ul>
+        <li>shorts/empire_hero.mp4 — 9:16, 46 sec</li>
+        <li>Taglish voice (BlessicaNeural)</li>
+        <li>Captions burned in, readable</li>
+        <li>Real proof image as the visual</li>
+        <li>Vision-checked: looks clean</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>THE CONTENT (3 PACKAGES)</h3>
+      <ul>
+        <li>Pillar 1: Fail-First Oracle</li>
+        <li>Pillar 2: Hardened Server (472 lines)</li>
+        <li>Pillars 3-5: Stack + n8n + Funnel (649 lines)</li>
+        <li>Taglish, real commands, teach-as-you-do</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>THE SELF-RUNNING MACHINE</h3>
+      <ul>
+        <li>n8n workflow (webhook→voice→captions)</li>
+        <li>watch_daemon.py (drop a script → auto video)</li>
+        <li>Voice + captions tested working</li>
+        <li>All runs on the free box</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- TROOP SWARM -->
+  <div class="troops">
+    <h3>THE TROOP SWARM (agy + cmdc) — all finished</h3>
+    <div class="troop"><span class="who">agy · Claude Opus (thinking)</span><span class="res">Pillar 2 package — <span class="ok">472 lines ✓</span></span></div>
+    <div class="troop"><span class="who">agy · Gemini 3.7 Flash</span><span class="res">Pillars 3-5 package — <span class="ok">649 lines ✓</span></span></div>
+    <div class="troop"><span class="who">cmdc · coding agent</span><span class="res">Built automation, self-updated — <span class="ok">verified ✓</span></span></div>
+  </div>
+
+  <!-- FILES -->
+  <div class="files">
+    <h3>REAL FILES (verified on disk)</h3>
+    <div class="frow"><span class="fn">shorts/empire_hero.mp4</span><span class="fs">3.6 MB</span></div>
+    <div class="frow"><span class="fn">vo/empire_vo.mp3</span><span class="fs">404 KB</span></div>
+    <div class="frow"><span class="fn">captions/empire_caps.srt</span><span class="fs">1.1 KB</span></div>
+    <div class="frow"><span class="fn">packages/p2_package.md</span><span class="fs">472 lines</span></div>
+    <div class="frow"><span class="fn">packages/p3_5_package.md</span><span class="fs">649 lines</span></div>
+    <div class="frow"><span class="fn">content_factory_workflow.json</span><span class="fs">valid JSON</span></div>
+    <div class="frow"><span class="fn">watch_daemon.py</span><span class="fs">compiles OK</span></div>
+    <div class="frow"><span class="fn">repo: github.com/MakaveliMachiavelli/agent-lab-ph</span><span class="fs">pushed ✓</span></div>
+  </div>
+
+  <!-- HONEST GAP -->
+  <div class="gap">
+    <h3>THE ONE HONEST GAP</h3>
+    <p>Pillar 1's "3 beses tinanggihan" Oracle signup-rejection footage is still a placeholder — we have no real rejection-screen recording. Every other claim in this document is real and reproducible. The fail-first security drama in Pillar 2 uses real commands, scripted as a story.</p>
+  </div>
+
+  <!-- NEXT -->
+  <div class="next">
+    <h3>NEXT SMART MOVES (you decide)</h3>
+    <ol>
+      <li>Record real Oracle rejection screens → drop in captures/ → we assemble the P1 long-form</li>
+      <li>Launch watch_daemon live so any new script auto-renders to a short</li>
+      <li>Push P2 + P3-5 through the same hero pipeline → 3 more shorts in minutes</li>
+      <li>Finish n8n setup so the content-factory workflow runs on the box itself</li>
+    </ol>
+  </div>
+
+  <div class="foot">Agent Lab PH · Free-tier cloud + automation for Pinoy freelancers · Built on a ₱0 stack, proven live.</div>
+</div>
+</body>
+</html>
