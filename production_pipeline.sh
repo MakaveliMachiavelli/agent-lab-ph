@@ -49,10 +49,10 @@ case "${1:-help}" in
     ;;
   publish-check)
     log "Pre-publish checklist:"
-    [ -f "$VO_DIR"/*.mp3 ] && echo "  ✅ VO ready" || echo "  ❌ No VO"
-    [ -f "$CAPS_DIR"/*.srt ] && echo "  ✅ Captions ready" || echo "  ❌ No captions"
-    [ -f "$FINAL_DIR"/*.mp4 ] && echo "  ✅ Final video ready" || echo "  ❌ No final"
-    [ -f "$SHORTS_DIR"/*.mp4 ] && echo "  ✅ Shorts ready" || echo "  ❌ No shorts"
+    ls "$VO_DIR"/*.mp3 >/dev/null 2>&1 && echo "  ✅ VO ready" || echo "  ❌ No VO"
+    ls "$CAPS_DIR"/*.srt >/dev/null 2>&1 && echo "  ✅ Captions ready" || echo "  ❌ No captions"
+    ls "$FINAL_DIR"/*.mp4 >/dev/null 2>&1 && echo "  ✅ Final video ready" || echo "  ❌ No final"
+    ls "$SHORTS_DIR"/*.mp4 >/dev/null 2>&1 && echo "  ✅ Shorts ready" || echo "  ❌ No shorts"
     ;;
   *)
     echo "Agent Lab PH Production Pipeline"
