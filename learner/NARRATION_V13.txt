@@ -1,0 +1,32 @@
+# JobBot V13 — Final Taglish Narration (Natural Pinoy, Zero Grammar Errors)
+
+## Hook (0-3s)
+"Pagod ka na bang mag-puyat sa OnlineJobs? May libreng paraan para hindi na."
+
+## Pain (3-15s)
+"Gabi-gabi, pagkatapos ng shift, naka-upo ka pa rin sa laptop. Scroll, click, type — tapos zero reply. Nakakapagod, 'di ba?"
+
+## Reveal (15-30s)
+"Eto ang diskarte: libre, walang coding. Tatlong steps lang. Buksan ang browser. I-run ang script. Hayaan ang robot ang bahala."
+
+## Proof (30-45s)
+"Tignan mo. Nagba-browse siya ng jobs. Nagta-type ng cover letter. Click apply, submit — uulit-ulit habang tulog ka."
+
+## CTA (45-55s)
+"Gusto mo rin? I-comment ang ROBOT. I-sesend ko ang libreng guide — 15 minutes setup, walang bayad."
+
+## Brand (55-60s)
+"Agent Lab PH. Built by Dice. Diskarte, hindi scam."
+
+---
+
+## Alternative Hooks (for A/B test)
+1. "50 jobs per gabi, habang tulog ka? Eto ang libreng secret."
+2. "Huwag ka nang mag-apply manually. May robot na gagawa niyan para sa'yo."
+3. "Walang reply sa job applications mo? Subukan mo 'to — libre pa."
+
+## Emphasis words (glitch/pop in video)
+- "ROBOT" → glitch
+- "libre" / "LIBRE" → morph highlight
+- "50" → count-up
+- "15" → count-up
