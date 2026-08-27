@@ -1,0 +1,91 @@
+1
+00:00:00,000 --> 00:00:02,548
+3 beses akong tinanggihan
+
+2
+00:00:02,548 --> 00:00:05,096
+ng Oracle Cloud. Pero
+
+3
+00:00:05,096 --> 00:00:07,644
+eto — may free
+
+4
+00:00:07,644 --> 00:00:10,192
+server na ako ngayon.
+
+5
+00:00:10,192 --> 00:00:12,740
+Paano? Una: card declined.
+
+6
+00:00:12,740 --> 00:00:15,289
+GCash virtual card? Declined.
+
+7
+00:00:15,289 --> 00:00:17,837
+Pangalawa: "Out of capacity"
+
+8
+00:00:17,837 --> 00:00:20,385
+— paulit-ulit. Pangatlo: Mali
+
+9
+00:00:20,385 --> 00:00:22,933
+ang region — permanent
+
+10
+00:00:22,933 --> 00:00:25,481
+na pala. Solution: Real
+
+11
+00:00:25,481 --> 00:00:28,029
+bank card. Low-load region.
+
+12
+00:00:28,029 --> 00:00:30,578
+Osaka, Mumbai, Frankfurt —
+
+13
+00:00:30,578 --> 00:00:33,126
+hindi ashburn. Retry availability
+
+14
+00:00:33,126 --> 00:00:35,674
+domain kapag "out of
+
+15
+00:00:35,674 --> 00:00:38,222
+capacity". Success. 2 OCPU,
+
+16
+00:00:38,222 --> 00:00:40,770
+12GB RAM — hindi
+
+17
+00:00:40,770 --> 00:00:43,318
+24GB! Stale 2023 tutorial?
+
+18
+00:00:43,318 --> 00:00:45,867
+Half na ngayon. Free
+
+19
+00:00:45,867 --> 00:00:48,415
+forever? Hindi. Idle 7
+
+20
+00:00:48,415 --> 00:00:50,963
+days = closed. Login
+
+21
+00:00:50,963 --> 00:00:53,511
+monthly. Keepalive cron later
+
+22
+00:00:53,511 --> 00:00:56,059
+ituturo. Setup service 5k
+
+23
+00:00:56,059 --> 00:00:58,607
+pesos — bio link.

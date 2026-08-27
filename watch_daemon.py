@@ -1,14 +1,6 @@
 #!/usr/bin/env python3
-"""
-Agent Lab PH — Watch Daemon
-Watches scripts_in/ for new .txt files, turns each into a vertical short:
-  1. edge-tts (BlessicaNeural, Taglish) -> vo/<name>.mp3
-  2. agent-reach transcribe (Groq Whisper) -> captions/<name>.srt
-  3. ffmpeg: burn captions, scale to 9:16 -> shorts/<name>.mp4
-  4. move processed .txt -> scripts_done/
-Runs on the free Oracle box. ₱0 to operate.
-"""
-import os, time, subprocess, shutil, re
+"""watch_daemon.py — txt -> VO + SRT + short (fixed)"""
+import os, re, subprocess, shutil, time
 
 BASE = "/home/allenos/agent-lab-ph"
 IN_DIR = os.path.join(BASE, "scripts_in")
@@ -16,7 +8,8 @@ DONE_DIR = os.path.join(BASE, "scripts_done")
 VO_DIR = os.path.join(BASE, "vo")
 CAP_DIR = os.path.join(BASE, "captions")
 SHORT_DIR = os.path.join(BASE, "shorts")
-EDGE = "/home/allenos/project-titan/.venv-whisper/bin/edge-tts"
+
+EDGE = "/home/allenos/.hermes/hermes-agent/venv/bin/edge-tts"
 TRANSCRIBE = "/home/allenos/.agent-reach-venv/bin/agent-reach"
 POLL = 10
 
@@ -25,6 +18,42 @@ for d in (IN_DIR, DONE_DIR, VO_DIR, CAP_DIR, SHORT_DIR):
 
 def safe(name):
     return re.sub(r'[^a-zA-Z0-9_-]', '_', name)
+
+def text_to_srt(text_path, srt_path, audio_path):
+    """Convert plain transcript to timed SRT using ffprobe audio duration."""
+    raw = open(text_path).read().strip()
+    if not raw:
+        return False
+    if '-->' in open(text_path).read():
+        shutil.copy(text_path, srt_path)
+        return True
+    try:
+        dur = float(subprocess.check_output([
+            "ffprobe", "-v", "error", "-show_entries", "format=duration",
+            "-of", "default=noprint_wrappers=1:nokey=1", audio_path
+        ]).decode().strip())
+    except Exception:
+        dur = 30.0
+    words = raw.split()
+    chunks = []
+    cur = []
+    for w in words:
+        cur.append(w)
+        if len(cur) >= 4:
+            chunks.append(" ".join(cur))
+            cur = []
+    if cur:
+        chunks.append(" ".join(cur))
+    per = dur / max(len(chunks), 1)
+    def ts(sec):
+        return f"{int(sec//3600):02d}:{int(sec%3600//60):02d}:{int(sec%60):02d},{int(sec%1*1000):03d}"
+    lines = []
+    for i, c in enumerate(chunks):
+        st = i * per
+        en = min((i + 1) * per, dur)
+        lines += [str(i + 1), f"{ts(st)} --> {ts(en)}", c, ""]
+    open(srt_path, "w").write("\n".join(lines))
+    return True
 
 def process(txt_path):
     name = safe(os.path.splitext(os.path.basename(txt_path))[0])
@@ -39,7 +68,10 @@ def process(txt_path):
     with open(srt, "w") as f:
         subprocess.run([TRANSCRIBE, "transcribe", mp3], stdout=f,
                        stderr=subprocess.DEVNULL)
-    # 3. Assemble vertical short (proof.png as B-roll background, captions burned)
+
+    text_to_srt(txt_path, srt, mp3)  # rebuild valid SRT from transcript
+
+    # 3. Assemble vertical short (bg.png as B-roll background, captions burned)
     proof = "/tmp/proof.png"
     if os.path.exists(proof):
         bg = proof
@@ -48,7 +80,8 @@ def process(txt_path):
         bg = os.path.join(BASE, "bg.png")
         subprocess.run(["ffmpeg", "-y", "-f", "lavfi", "-i",
                         "color=c=0x0a0e1a:s=1080x1920", "-frames", "1", bg],
-                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                       env={**os.environ, "FONTCONFIG_FILE": "/tmp/fonts.conf"})
     subprocess.run([
         "ffmpeg", "-y", "-loop", "1", "-i", bg, "-i", mp3,
         "-filter_complex",
@@ -59,7 +92,8 @@ def process(txt_path):
         "OutlineColour=&H000000&,Outline=4'[v]",
         "-map", "[v]", "-map", "1:a", "-c:v", "libx264", "-preset", "medium",
         "-crf", "21", "-c:a", "aac", "-b:a", "128k", "-shortest", out],
-        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                       env={**os.environ, "FONTCONFIG_FILE": "/tmp/fonts.conf"})
     # 4. Archive
     shutil.move(txt_path, os.path.join(DONE_DIR, os.path.basename(txt_path)))
     print(f"[watch] DONE -> {out}", flush=True)

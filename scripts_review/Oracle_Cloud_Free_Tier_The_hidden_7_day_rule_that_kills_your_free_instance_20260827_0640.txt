@@ -1,0 +1,18 @@
+TOPIC: Oracle Cloud Free Tier
+ANGLE: The hidden 7-day rule that kills your free instance
+COMPETITOR COUNT: 5
+TOP COMPETITORS:
+- Oracle Cloud Free Tier: Step-by-Step Registration Guide (2026) (7925 views)
+- 1.1 Creating OCI Free Tier account for Practicing Labs (No Credit Card Required) (6251 views)
+- Amazing Free VPS (4CPU 24GB Ram) Oracle Quick Setup Tutorial (999153 views)
+
+SCRIPT OUTLINE:
+[Hook] The hidden 7-day rule that kills your free instance
+[Body] Your unique experience/process
+[CTA] Follow for more free PH tech tips
+
+NOTES: 
+- Write in Taglish, conversational tone
+- Target 45-60 seconds spoken
+- Include specific numbers/steps
+- End with clear CTA

@@ -1,154 +1,117 @@
 #!/usr/bin/env python3
-"""content_intel.py — AI Content Intelligence Agent
-Monitors competitor channels, analyzes top content, generates fresh scripts,
-produces via pipeline, auto-posts via Composio.
-"""
-import json, subprocess, os, re, time
-from datetime import datetime, timedelta
+"""content_intel.py v2 — Research only, no auto-production. Flags for human review."""
+import subprocess, os, json, re, time
 from pathlib import Path
 
-# Config
-NICHE_KEYWORDS = [
-    "Oracle Cloud Free Tier", "AI automation Philippines", "freelance Philippines",
-    "work from home PH", "BPO career", "virtual assistant PH", "online jobs PH",
-    "make money online Philippines", "passive income PH", "side hustle PH"
+BASE = Path("/home/allenos/agent-lab-ph")
+SCRIPTS_DIR = BASE / "scripts_review"
+SCRIPTS_DIR.mkdir(exist_ok=True)
+
+NICHES = [
+    ("Oracle Cloud Free Tier", "Oracle Cloud free tier tutorial Philippines site:youtube.com"),
+    ("AI automation Philippines", "AI automation Philippines freelance site:youtube.com"),
+    ("freelance Philippines", "freelance Philippines Upwork tips site:youtube.com"),
+    ("work from home PH", "work from home Philippines 2024 site:youtube.com"),
+    ("BPO career", "BPO career Philippines Accenture WNS site:youtube.com"),
+    ("virtual assistant PH", "virtual assistant Philippines salary site:youtube.com"),
+    ("online jobs PH", "online jobs Philippines legit site:youtube.com"),
+    ("make money online Philippines", "make money online Philippines legitimate site:youtube.com"),
+    ("passive income PH", "passive income Philippines 2024 site:youtube.com"),
+    ("side hustle PH", "side hustle Philippines students site:youtube.com"),
 ]
 
-COMPETITOR_CHANNELS = [
-    # These would be real channels - for now using search-based approach
-]
-
-OUTPUT_DIR = Path("/home/allenos/agent-lab-ph/scripts_in")
-ARCHIVE_DIR = Path("/home/allenos/agent-lab-ph/content_intel_archive")
-ARCHIVE_DIR.mkdir(exist_ok=True)
-
-def search_youtube(keyword, max_results=5):
-    """Search YouTube for recent videos on keyword."""
-    cmd = [
-        "yt-dlp", "--flat-playlist", "--print-json",
-        f"ytsearch{max_results}:{keyword} Philippines 2024",
-        "--skip-download"
-    ]
+def research_niche(topic, query):
     try:
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+        result = subprocess.run([
+            "/home/allenos/.local/bin/yt-dlp",
+            "--flat-playlist",
+            "--dump-json",
+            f"ytsearch5:{query}",
+        ], capture_output=True, text=True, timeout=60)
+        
         videos = []
-        for line in result.stdout.strip().split('\n'):
+        for line in result.stdout.strip().split("\n"):
             if line:
                 try:
                     v = json.loads(line)
                     videos.append({
-                        'title': v.get('title', ''),
-                        'url': v.get('url', ''),
-                        'view_count': v.get('view_count', 0),
-                        'duration': v.get('duration', 0),
-                        'uploader': v.get('uploader', ''),
-                        'upload_date': v.get('upload_date', ''),
+                        "title": v.get("title", ""),
+                        "url": v.get("url", ""),
+                        "views": v.get("view_count", 0),
+                        "duration": v.get("duration", 0),
                     })
                 except:
                     pass
         return videos
     except Exception as e:
-        print(f"Search error for {keyword}: {e}")
+        print(f"  Error researching {topic}: {e}")
         return []
 
-def get_video_transcript(url):
-    """Get transcript via yt-dlp."""
-    cmd = ["yt-dlp", "--write-auto-sub", "--sub-lang", "en", 
-           "--skip-download", "--sub-format", "vtt", "-o", "/tmp/%(id)s.%(ext)s", url]
-    try:
-        subprocess.run(cmd, capture_output=True, timeout=60)
-        # Find the vtt file
-        for f in Path("/tmp").glob("*.vtt"):
-            text = f.read_text()
-            f.unlink()
-            # Parse VTT to plain text
-            lines = text.split('\n')
-            content = []
-            for l in lines:
-                if '-->' not in l and l.strip() and not l.startswith('WEBVTT'):
-                    content.append(l.strip())
-            return ' '.join(content)
-    except Exception as e:
-        print(f"Transcript error: {e}")
-    return ""
-
-def analyze_content_gaps(videos, keyword):
-    """Use AI to analyze what's missing / fresh angles."""
-    # For now, generate structured angles based on keyword
+def generate_script_idea(topic, videos):
     angles = {
         "Oracle Cloud Free Tier": [
             "The hidden 7-day rule that kills your free instance",
             "Why Ashburn region is a trap — use Osaka instead",
-            "Real credit card vs GCash: why virtual cards fail",
-            "My 6-month Oracle Free Tier survival log",
+            "How I got 2 OCPU + 12GB RAM free (not 24GB)"
         ],
         "AI automation Philippines": [
             "How I automated my OnlineJobs.ph applications",
-            "Building a ₱0 AI agent stack on free Oracle cloud",
-            "From BPO agent to AI automation builder — the roadmap",
+            "Building a zero-peso AI agent stack on free Oracle cloud",
+            "Replacing Upwork proposals with AI agents"
         ],
         "freelance Philippines": [
-            "How I charge $50/hr from PH — real client proof",
+            "How I charge 50 dollars/hr from PH — real client proof",
             "The Upwork profile hack that got me 3 clients in 1 week",
-            "Filipino freelancer tax guide 2024 — simple version",
+            "From BPO to 5k per month freelance — exact roadmap"
         ],
         "BPO career": [
             "Why I returned to WNS after 2 years — the real story",
             "Accenture vs WNS vs Concentrix — where to apply in 2024",
-            "BPO to freelance transition: my exact 90-day plan",
+            "How to explain your BPO gap in tech interviews"
         ],
     }
-    return angles.get(keyword, [f"Fresh take on {keyword} for Filipinos"])
-
-def generate_script(keyword, angle, competitor_insights):
-    """Generate a script for the watch_daemon pipeline."""
-    templates = {
-        "hook": f"Stop doing {keyword.lower()} the wrong way. ",
-        "body": f"Here's what {len(competitor_insights)} top videos missed: ",
-        "cta": "Follow for more Philippines tech/freelance reality checks."
-    }
     
-    # Mix hook + angle + body + cta
-    script = f"{templates['hook']}{angle}. {templates['body']}Most creators show the happy path. I show the traps. {templates['cta']}"
-    return script
+    topic_angles = angles.get(topic, [f"Fresh take on {topic} for Filipinos"])
+    return topic_angles[0]
 
-def save_script(script, keyword, angle):
-    """Save as .txt for watch_daemon to process."""
-    safe_name = re.sub(r'[^a-zA-Z0-9_]', '_', f"{keyword}_{angle}")[:80]
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M")
-    filename = f"{safe_name}_{timestamp}.txt"
-    filepath = OUTPUT_DIR / filename
-    filepath.write_text(script)
-    print(f"Created: {filepath}")
-    return filepath
-
-def run_intel_cycle():
-    """Main intelligence cycle."""
-    print(f"[{datetime.now()}] Starting content intel cycle...")
+def main():
+    print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] Starting content intel cycle...")
+    print("Mode: RESEARCH ONLY -> saves to scripts_review/ for manual approval")
     
-    all_scripts = []
-    for keyword in NICHE_KEYWORDS:
-        print(f"  Researching: {keyword}")
-        videos = search_youtube(keyword, max_results=3)
+    for topic, query in NICHES:
+        print(f"  Researching: {topic}")
+        videos = research_niche(topic, query)
         if not videos:
             continue
-            
-        angles = analyze_content_gaps(videos, keyword)
-        for angle in angles[:2]:  # Top 2 angles per keyword
-            script = generate_script(keyword, angle, videos)
-            filepath = save_script(script, keyword, angle)
-            all_scripts.append({
-                'file': str(filepath),
-                'keyword': keyword,
-                'angle': angle,
-                'script': script[:100] + "..."
-            })
+        
+        angle = generate_script_idea(topic, videos)
+        
+        safe_topic = re.sub(r'[^a-zA-Z0-9]+', '_', topic)
+        safe_angle = re.sub(r'[^a-zA-Z0-9]+', '_', angle)
+        filename = f"{safe_topic}_{safe_angle}_{time.strftime('%Y%m%d_%H%M')}.txt"
+        
+        content = f"""TOPIC: {topic}
+ANGLE: {angle}
+COMPETITOR COUNT: {len(videos)}
+TOP COMPETITORS:
+{chr(10).join(f"- {v['title'][:80]} ({v['views']} views)" for v in videos[:3])}
+
+SCRIPT OUTLINE:
+[Hook] {angle}
+[Body] Your unique experience/process
+[CTA] Follow for more free PH tech tips
+
+NOTES: 
+- Write in Taglish, conversational tone
+- Target 45-60 seconds spoken
+- Include specific numbers/steps
+- End with clear CTA
+"""
+        (SCRIPTS_DIR / filename).write_text(content)
+        print(f"    Wrote review script: {filename}")
     
-    # Archive this cycle
-    archive_file = ARCHIVE_DIR / f"intel_{datetime.now().strftime('%Y%m%d_%H%M')}.json"
-    archive_file.write_text(json.dumps(all_scripts, indent=2))
-    print(f"Cycle complete. {len(all_scripts)} scripts queued.")
-    return all_scripts
+    print(f"\nCycle complete. Review scripts in {SCRIPTS_DIR}")
+    print("When ready: copy to scripts_in/ for production")
 
 if __name__ == "__main__":
-    run_intel_cycle()
+    main()

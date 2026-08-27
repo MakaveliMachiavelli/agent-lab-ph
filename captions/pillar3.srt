@@ -1,0 +1,75 @@
+1
+00:00:00,000 --> 00:00:02,669
+You want a VPS
+
+2
+00:00:02,669 --> 00:00:05,338
+that does not cost
+
+3
+00:00:05,338 --> 00:00:08,007
+a peso? Oracle Free
+
+4
+00:00:08,007 --> 00:00:10,676
+Tier. But tutorials lie.
+
+5
+00:00:10,676 --> 00:00:13,345
+They show Ashburn. They
+
+6
+00:00:13,345 --> 00:00:16,014
+show 24GB. Truth: Ashburn
+
+7
+00:00:16,014 --> 00:00:18,683
+is full. 24GB is
+
+8
+00:00:18,683 --> 00:00:21,352
+not free. Go to
+
+9
+00:00:21,352 --> 00:00:24,021
+Osaka. Or Mumbai. Or
+
+10
+00:00:24,021 --> 00:00:26,690
+Frankfurt. Pick 2 OCPU,
+
+11
+00:00:26,690 --> 00:00:29,359
+12GB RAM. Standard shape.
+
+12
+00:00:29,359 --> 00:00:32,028
+Real credit card only.
+
+13
+00:00:32,028 --> 00:00:34,697
+Virtual cards fail. Once
+
+14
+00:00:34,697 --> 00:00:37,366
+created: SSH hardening. UFW.
+
+15
+00:00:37,366 --> 00:00:40,035
+Fail2ban. Tailscale for zero-trust
+
+16
+00:00:40,035 --> 00:00:42,704
+access. Cron for monthly
+
+17
+00:00:42,704 --> 00:00:45,373
+keepalive. That is the
+
+18
+00:00:45,373 --> 00:00:48,042
+whole playbook. No secrets.
+
+19
+00:00:48,042 --> 00:00:50,712
+Just execution.

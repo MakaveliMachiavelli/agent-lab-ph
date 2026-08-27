@@ -1,0 +1,51 @@
+1
+00:00:00,000 --> 00:00:01,968
+Kaya mo bang gumawa
+
+2
+00:00:01,968 --> 00:00:03,936
+ng sariling AI video
+
+3
+00:00:03,936 --> 00:00:05,903
+factory na libre? Oo.
+
+4
+00:00:05,903 --> 00:00:07,871
+Oracle free tier lang
+
+5
+00:00:07,871 --> 00:00:09,839
+katapat. Una, kuha ka
+
+6
+00:00:09,839 --> 00:00:11,807
+ng free VPS. Pangalawa,
+
+7
+00:00:11,807 --> 00:00:13,775
+install ng open-source tools.
+
+8
+00:00:13,775 --> 00:00:15,743
+Tapos automation na. Walang
+
+9
+00:00:15,743 --> 00:00:17,711
+subscription. Walang credit card.
+
+10
+00:00:17,711 --> 00:00:19,679
+Tuloy tuloy hanggang matuto
+
+11
+00:00:19,679 --> 00:00:21,647
+ka. Follow for more
+
+12
+00:00:21,647 --> 00:00:23,615
+libreng tech tips mga
+
+13
+00:00:23,615 --> 00:00:25,583
+ka-freelancer!
