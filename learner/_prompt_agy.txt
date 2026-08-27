@@ -1,0 +1,55 @@
+You are a YouTube content strategy analyst. Analyze channel @akmofficial.
+
+VIDEO TITLES:
+- How to Build an AI Team that Manages Itself
+- How to Use AI as Your Second Brain in 2026
+- Stop Using AI Chat Threads and Do This Instead
+- Google Deepmind CTO on How AI Actually Changes Your Workday
+- Claude Cowork's New Live Artifacts: A Step-by-Step Demo
+- Building My Own Knowledge Management System for Claude Code with Obsidian
+- How I Use Claude Code: From Terminal Hacks to Agent Teams
+- Claude Code Commands & Cron Jobs: Full Setup Tutorial
+- I Built an App to Solve a Tiny Problem using Claude Code
+- Claude Cowork Lightning Demo for Business Users
+- Greg Brockman on what the best engineers and leaders do today
+- Claude Code for Absolute Beginners: STEP-BY-STEP TUTORIAL
+- How to Run Open-Source AI Models Locally on Your Laptop
+- Turning Notes Into AI Videos: Google NotebookLM Walkthrough
+- Turning Every Post or Announcement Multimodal
+- Google Gemini AI in Sheets: Full Walkthrough & Tips
+- You.com ARI Demo: Deep Research Agent
+- Top 4 AI Questions for Every Executive to Ask
+- Gemini’s Real-Time AI Feature: Full Demo & Review
+- Create and Stack Custom GPTs in ChatGPT (Full Demo)
+
+SHORT TITLES:
+- Here are some of the best AI tools for small businesses
+- "There has never been a better time to start a company than right at this minute." - Mark
+- Mark Cuban read his first fiction book in more than a decade
+- For months, the bottleneck in my AI workforce was me
+- Why is nobody talking about this new ChatGPT feature? For two years I've been handing AI the work
+- My AI has read every meeting transcript I generated this year and still cannot tell me why I made
+- Yesterday I hosted a workshop with Mark Cuban to teach over 20,000 people how to build an AI
+- Yesterday, I hosted a free AI agent workshop with Mark Cuban.
+- Last month I spoke to a new mom who built an AI chief of staff to run her household.
+- There could be a moment where your AI stops just being the tool you open and starts being someone
+- If you have been hearing the word AI agents everywhere for the last year and you've been waiting for
+- mcuban is coming on to talk AI agents with me, so if you've been wondering what the heck all of this
+- Join my free AI Agent Workshop with Mark Cuban on August 11th at 1-2pm ET to learn more about my
+- I stopped opening a chat window to get things done a few months ago, and my output went up
+- There comes a time in every AI business leader’s life when they must grab the zoom meeting by the
+- How long can you track AI logins before losing your best people? Announce you're measuring AI
+- Some of my best prompts are only two words long
+- Some of the faster-moving teams right now are giving AI access to more of their data, not less.
+- Getting this one thing wrong could cost you your business: thinking your company is ahead in AI when
+- Here’s a peek at my AI-first morning
+
+Analyze their content strategy. Output JSON with keys:
+- hook_formulas: [templates like "How to X that Y", "Why nobody is talking about Z"]
+- title_patterns: [patterns observed]
+- content_structure: [typical explainer steps]
+- visual_style: [from titles/descriptions]
+- shareability_factors: [why content spreads]
+- actionable_tactics_for_agent_lab: [specific for our faceless AI channel, host=Dice]
+
+Be specific, no fluff. Return only valid JSON.

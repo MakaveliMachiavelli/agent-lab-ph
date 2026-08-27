@@ -1,0 +1,7 @@
+Build a Remotion .tsx template for YouTube Shorts matching @akmofficial style:
+- Text hook in first 3s (title overlay)
+- Native captions word-by-word reveal via @remotion/captions
+- Clean dark professional background
+- Bottom progress bar
+Props: { title: string; srtPath: string; bgPath: string }
+Output complete TypeScript file only.

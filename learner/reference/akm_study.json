@@ -1,0 +1,401 @@
+{
+  "channel": "@akmofficial",
+  "analyzed_at": "2026-08-27 08:04:02",
+  "subscriber_count": "unknown",
+  "total_videos": 20,
+  "total_shorts": 20,
+  "analysis": {
+    "hooks": [
+      "Turning Notes Into AI Videos",
+      "Claude Code for Absolute Beginners",
+      "Claude Cowork's New Live Artifacts",
+      "How to Build an AI Team that Manages Itself",
+      "Gemini’s Real-Time AI Feature",
+      "Why is nobody talking about this new ChatGPT feature? For two years I've been handing AI the work",
+      "How long can you track AI logins before losing your best people? Announce you're measuring AI",
+      "Getting this one thing wrong could cost you your business",
+      "How to Use AI as Your Second Brain in 2026",
+      "How I Use Claude Code: From Terminal Hacks to Agent Teams",
+      "How to Run Open-Source AI Models Locally on Your Laptop",
+      "Claude Code Commands & Cron Jobs",
+      "You.com ARI Demo",
+      "How I Use Claude Code",
+      "Google Gemini AI in Sheets",
+      "Google Deepmind CTO on How AI Actually Changes Your Workday"
+    ],
+    "formats": [
+      {
+        "title": "How to Build an AI Team that Manages Itself",
+        "word_count": 9,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "How to Use AI as Your Second Brain in 2026",
+        "word_count": 10,
+        "has_number": true,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "Stop Using AI Chat Threads and Do This Instead",
+        "word_count": 9,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "Google Deepmind CTO on How AI Actually Changes Your Workday",
+        "word_count": 10,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 2
+      },
+      {
+        "title": "Claude Cowork's New Live Artifacts: A Step-by-Step Demo",
+        "word_count": 8,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": true,
+        "has_dash": false,
+        "uppercase_words": 0
+      },
+      {
+        "title": "Building My Own Knowledge Management System for Claude Code with Obsidian",
+        "word_count": 11,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 0
+      },
+      {
+        "title": "How I Use Claude Code: From Terminal Hacks to Agent Teams",
+        "word_count": 11,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": true,
+        "has_dash": false,
+        "uppercase_words": 0
+      },
+      {
+        "title": "Claude Code Commands & Cron Jobs: Full Setup Tutorial",
+        "word_count": 9,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": true,
+        "has_dash": false,
+        "uppercase_words": 0
+      },
+      {
+        "title": "I Built an App to Solve a Tiny Problem using Claude Code",
+        "word_count": 12,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 0
+      },
+      {
+        "title": "Claude Cowork Lightning Demo for Business Users",
+        "word_count": 7,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 0
+      },
+      {
+        "title": "Greg Brockman on what the best engineers and leaders do today",
+        "word_count": 11,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 0
+      },
+      {
+        "title": "Claude Code for Absolute Beginners: STEP-BY-STEP TUTORIAL",
+        "word_count": 7,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": true,
+        "has_dash": false,
+        "uppercase_words": 2
+      },
+      {
+        "title": "How to Run Open-Source AI Models Locally on Your Laptop",
+        "word_count": 10,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "Turning Notes Into AI Videos: Google NotebookLM Walkthrough",
+        "word_count": 8,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": true,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "Turning Every Post or Announcement Multimodal",
+        "word_count": 6,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 0
+      },
+      {
+        "title": "Google Gemini AI in Sheets: Full Walkthrough & Tips",
+        "word_count": 9,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": true,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "You.com ARI Demo: Deep Research Agent",
+        "word_count": 6,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": true,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "Top 4 AI Questions for Every Executive to Ask",
+        "word_count": 9,
+        "has_number": true,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "Gemini’s Real-Time AI Feature: Full Demo & Review",
+        "word_count": 8,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": true,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "Create and Stack Custom GPTs in ChatGPT (Full Demo)",
+        "word_count": 9,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 0
+      },
+      {
+        "title": "Here are some of the best AI tools for small businesses",
+        "word_count": 11,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "\"There has never been a better time to start a company than right at this minute.\" - Mark",
+        "word_count": 18,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": true,
+        "uppercase_words": 0
+      },
+      {
+        "title": "Mark Cuban read his first fiction book in more than a decade",
+        "word_count": 12,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 0
+      },
+      {
+        "title": "For months, the bottleneck in my AI workforce was me",
+        "word_count": 10,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "Why is nobody talking about this new ChatGPT feature? For two years I've been handing AI the work",
+        "word_count": 18,
+        "has_number": false,
+        "has_question": true,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "My AI has read every meeting transcript I generated this year and still cannot tell me why I made",
+        "word_count": 19,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "Yesterday I hosted a workshop with Mark Cuban to teach over 20,000 people how to build an AI",
+        "word_count": 18,
+        "has_number": true,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "Yesterday, I hosted a free AI agent workshop with Mark Cuban.",
+        "word_count": 11,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "Last month I spoke to a new mom who built an AI chief of staff to run her household.",
+        "word_count": 19,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "There could be a moment where your AI stops just being the tool you open and starts being someone",
+        "word_count": 19,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "If you have been hearing the word AI agents everywhere for the last year and you've been waiting for",
+        "word_count": 19,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "mcuban is coming on to talk AI agents with me, so if you've been wondering what the heck all of this",
+        "word_count": 21,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "Join my free AI Agent Workshop with Mark Cuban on August 11th at 1-2pm ET to learn more about my",
+        "word_count": 20,
+        "has_number": true,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 2
+      },
+      {
+        "title": "I stopped opening a chat window to get things done a few months ago, and my output went up",
+        "word_count": 19,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 0
+      },
+      {
+        "title": "There comes a time in every AI business leader’s life when they must grab the zoom meeting by the",
+        "word_count": 19,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "How long can you track AI logins before losing your best people? Announce you're measuring AI",
+        "word_count": 16,
+        "has_number": false,
+        "has_question": true,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 2
+      },
+      {
+        "title": "Some of my best prompts are only two words long",
+        "word_count": 10,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 0
+      },
+      {
+        "title": "Some of the faster-moving teams right now are giving AI access to more of their data, not less.",
+        "word_count": 18,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "Getting this one thing wrong could cost you your business: thinking your company is ahead in AI when",
+        "word_count": 18,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": true,
+        "has_dash": false,
+        "uppercase_words": 1
+      },
+      {
+        "title": "Here’s a peek at my AI-first morning",
+        "word_count": 7,
+        "has_number": false,
+        "has_question": false,
+        "has_colon": false,
+        "has_dash": false,
+        "uppercase_words": 0
+      }
+    ]
+  },
+  "key_observations": {
+    "content_style": "Observational/documentary style tech content",
+    "title_patterns": [
+      "Numbered lists",
+      "Question hooks",
+      "Provocative comparisons"
+    ],
+    "thumbnail_style": "Clean, professional, text overlay on solid bg",
+    "caption_style": "Native YouTube captions, auto-generated + edited",
+    "hook_timing": "Strong hook in first 3-5 seconds",
+    "pacing": "Explanatory with B-roll overlays"
+  }
+}

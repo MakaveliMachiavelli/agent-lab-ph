@@ -1,0 +1,50 @@
+{
+  "hook_formulas": [
+    "Stop Using [Standard Workflow/Feature] and Do This Instead",
+    "How to [High-Value Outcome] that [Operates Autonomously/Manages Itself]",
+    "Why is nobody talking about this new [Platform/Model] feature?",
+    "For months, the bottleneck in my [Workflow/System] was [Counterintuitive Culprit/Me]",
+    "I stopped [Common Habit] a few months ago, and my [Key Metric/Output] went up",
+    "Some of my best [Assets/Prompts/Tools] are only [Surprising Low Number/Constraint] long",
+    "Getting this one thing wrong could cost you [High-Stakes Asset/Business]: [Common Fallacy]",
+    "[High-Status Tech Leader/CTO] on [Critical Question/Future Skill]",
+    "How I Use [Tool]: From [Beginner Entrypoint] to [Advanced Automation System]",
+    "Last month I spoke to a [Unexpected Archetype] who built an AI [High-End Role] to run [Complex Domain]"
+  ],
+  "title_patterns": [
+    "Imperative Pattern-Interrupts: Action verb + rejection of standard paradigm ('Stop Using AI Chat Threads and Do This Instead')",
+    "System-Level Architecture: Upgrading from single prompts to automated units ('How to Build an AI Team that Manages Itself', 'From Terminal Hacks to Agent Teams')",
+    "Authority Borrowing / Executive Anchors: High-profile name drops and enterprise positioning ('Google Deepmind CTO on...', 'Greg Brockman on...', 'Top 4 AI Questions for Every Executive')",
+    "Micro-SaaS & Builder Pragmatism: First-person proof-of-work applied to specific utility ('I Built an App to Solve a Tiny Problem using Claude Code')",
+    "Tool Ecosystem Stacking: Pairing complementary software stacks ('Claude Code with Obsidian', 'Google Gemini AI in Sheets', 'Stack Custom GPTs in ChatGPT')",
+    "Explicit Skill Categorization & Bracketing: End-of-title capitalization and scoping labels ('(Full Demo)', 'STEP-BY-STEP TUTORIAL', 'for Business Users', 'Full Setup Tutorial')"
+  ],
+  "content_structure": [
+    "1. The Bottleneck / Anti-Pattern: Highlight why the current popular method (e.g., typing in web chat UIs) is slow, manual, or obsolete.",
+    "2. The Shift to Systems & Agents: Reframe the problem from 'prompting better' to building continuous pipelines, agents, or cron-triggered jobs.",
+    "3. Stack Architecture Overview: High-level visual breakdown of how the components interface (e.g., Claude Code CLI + local Markdown/Obsidian vault + OS cron).",
+    "4. Live Terminal / Hands-on Implementation: Real-time execution showing setup, CLI commands, configs, and error-handling steps from zero to working prototype.",
+    "5. Live Artifact / Output Validation: Proving the autonomous loop works by reviewing the generated code, file, or deployed artifact.",
+    "6. Executive & Enterprise Takeaways: Brief operational advice on governance, security, data access, or scalability for production use."
+  ],
+  "visual_style": [
+    "Terminal-centric & Developer Native: High-contrast Dark mode CLI (Claude Code, shell commands, zsh/tmux setups) replacing generic web interfaces.",
+    "Bimodal Screen Splitting: Side-by-side execution layout featuring the agent prompt/terminal on the left and live artifacts/file tree updates on the right.",
+    "System Diagram Overlays: Clean node-and-wire flowcharts illustrating agent hierarchies, memory retrieval loops, and cron schedules.",
+    "UI Scannability & Highlighting: Zoomed-in pans on command syntax, JSON flags, and cron expressions with colored terminal badges and syntax highlighting."
+  ],
+  "shareability_factors": [
+    "High Utility-to-Time Ratio: Concrete, copy-pasteable setups (terminal hacks, cron jobs, Obsidian integrations) give viewers immediate implementation assets.",
+    "Status Signaling: Sharing content framed around executive AI literacy, autonomous agent teams, and cutting-edge developer tools signals technical sophistication on platforms like LinkedIn and X.",
+    "Contrarian Pragmatism: Challenging widespread casual AI habits ('stop using chat threads', 'prompts are only two words long') drives debate, quote retweets, and bookmark saves.",
+    "Forward-Looking Urgency: Anchoring concepts in near-future workflows (e.g., 'Second Brain in 2026', 'AI team that manages itself') activates fear of missing the architectural curve."
+  ],
+  "actionable_tactics_for_agent_lab": [
+    "Establish Dice as an Autonomous Agent Persona: Rather than hiding the faceless format, brand Dice as an actual self-operating agent terminal running live tests directly on screen.",
+    "Adopt the 'Chat vs. Terminal' Contrast Hook: Position every video against manual prompting: 'Stop chatting with models in a browser. Today Dice demonstrates headless cron-triggered agents.'",
+    "Emphasize Automated Screen Recordings (Asciinema / VHS): Use automated terminal-recording tools with dynamic pan-and-scan camera movements to maintain visual kinetic energy without a talking head.",
+    "Create Public Config & Recipe Repos: Package every video's CLI commands, system prompts, and cron scripts into an open GitHub repo linked in descriptions to maximize bookmarks and engagement.",
+    "Focus on Autonomous Multi-Agent Workflows: Directly replicate AKM's highest-performing theme by having Dice demo multi-agent coordination (e.g., researcher agent passes context to developer agent, verified by test runner agent).",
+    "Run 'Tiny Problem Solved' Case Studies: Show Dice building self-contained single-utility CLI scripts or micro-automations within 5 to 8 minutes, emphasizing end-to-end execution."
+  ]
+}
