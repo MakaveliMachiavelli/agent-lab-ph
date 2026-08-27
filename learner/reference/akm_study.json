@@ -1,27 +1,27 @@
 {
   "channel": "@akmofficial",
-  "analyzed_at": "2026-08-27 08:04:02",
+  "analyzed_at": "2026-08-27 14:23:00",
   "subscriber_count": "unknown",
   "total_videos": 20,
   "total_shorts": 20,
   "analysis": {
     "hooks": [
-      "Turning Notes Into AI Videos",
-      "Claude Code for Absolute Beginners",
-      "Claude Cowork's New Live Artifacts",
-      "How to Build an AI Team that Manages Itself",
-      "Gemini’s Real-Time AI Feature",
-      "Why is nobody talking about this new ChatGPT feature? For two years I've been handing AI the work",
-      "How long can you track AI logins before losing your best people? Announce you're measuring AI",
-      "Getting this one thing wrong could cost you your business",
-      "How to Use AI as Your Second Brain in 2026",
-      "How I Use Claude Code: From Terminal Hacks to Agent Teams",
       "How to Run Open-Source AI Models Locally on Your Laptop",
-      "Claude Code Commands & Cron Jobs",
+      "How I Use Claude Code: From Terminal Hacks to Agent Teams",
+      "Why is nobody talking about this new ChatGPT feature? For two years I've been handing AI the work",
+      "Claude Cowork's New Live Artifacts",
+      "How to Use AI as Your Second Brain in 2026",
       "You.com ARI Demo",
-      "How I Use Claude Code",
+      "Claude Code for Absolute Beginners",
+      "Turning Notes Into AI Videos",
+      "Gemini’s Real-Time AI Feature",
+      "Getting this one thing wrong could cost you your business",
+      "Google Deepmind CTO on How AI Actually Changes Your Workday",
+      "How long can you track AI logins before losing your best people? Announce you're measuring AI",
+      "Claude Code Commands & Cron Jobs",
       "Google Gemini AI in Sheets",
-      "Google Deepmind CTO on How AI Actually Changes Your Workday"
+      "How to Build an AI Team that Manages Itself",
+      "How I Use Claude Code"
     ],
     "formats": [
       {
