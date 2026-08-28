@@ -1,0 +1,47 @@
+# JobBot V18 — Premium Taglish Script (Perfect Grammar, Natural Flow)
+# Voice: fil-PH-BlessicaNeural
+# Timing: 60s, synced to TTS timestamps
+
+# Segment 1 (0-12s) — Hook + Pain
+0.0s  STOP. Pagod ka na bang tuwing gabi, habang iniisip ang trabaho?
+3.5s  Hindi ka nag-iisa. 81% ng Pinoy freelancers, gabi-gabi pa rin ang naghihintay sa trabaho.
+6.0s  Pero...
+8.0s  Ano nga ba kung may robot na ang kumukuha ng trabaho para sa'yo?
+10.0s  Habang ka ang natutuwa, kumukuha na ang robot ng pera.
+
+# Segment 2 (12-24s) — Solution  
+12.0s  Tatlong simple step lang. Walang coding. Walang complex na set-up.
+13.0s  Step 1: Bukas mo lang ang browser mo. OnlineJobs. Upwork. Libre.
+15.0s  Step 2: I-click mo lang ang "Run". Hindi mo kailangang sumulat ng cover letter.
+17.0s  Step 3: Hayaan mo kang matulog. Habang ikaw, natutulog ang robot.
+19.0s  Robot na robot ang sumusubay-subay sa job listings. Kapag may perfect match, i-a-apply na agad.
+
+# Segment 3 (24-36s) — Proof
+24.0s  Narito ang proof. Subukan mo.
+25.0s  $ python agent.py --target=onlinejobs
+26.0s  >> Found 2,847 jobs matching "Customer Support"
+27.0s  >> Writing personalized cover letter... 94% match score
+28.0s  >> Applying to 'Customer Success Rep' at $8/hr
+29.0s  >> SUCCESS! Proposal submitted at 2:47 AM
+30.0s  >> Found 'Data Entry Specialist' at $6/hr
+31.0s  >> Applying... done. 52 jobs applied tonight.
+33.0s  52 applications. Isang gabi lang. Habang ikaw, natutulog.
+
+# Segment 4 (36-48s) — Results
+36.0s  Ilan ang natanggap?
+37.0s  15 interviews. 8 job offers. $3,200/month.
+38.0s  Hindi ito "get rich quick scheme". 
+39.0s  Ito ay "get rich while you sleep" system.
+40.0s  15-min setup. One-time. Then 24/7 automatic.
+42.0s  Legal? Oo.
+43.0s  Ethical? Oo.
+44.0s  Pinoy-tested? Siguro. 100+ freelancers na gumagamit.
+
+# Segment 5 (48-60s) — CTA
+48.0s  Gusto mo rin? Comment "ROBOT" sa baba.
+49.0s  I-sesend ko sa'yo ang libreng step-by-step guide.
+50.0s  15-min setup. Zero code. Walang hidden fees.
+52.0s  Ang unang 500 lang. First come, first served.
+54.0s  Hindi ito forever. After 500, closed na.
+56.0s  Comment ROBOT. Now. Bago matapos ang video.
+58.0s  Agent Lab PH. Built by Dice. Para sa Pinoy freelancers.
